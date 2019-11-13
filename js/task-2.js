@@ -3,8 +3,7 @@
 // const countProps = { mail: "poly@mail.com", isOnline: true, score: 500 };
 
 function countProps(obj) {
-  const values = Object.values(obj);
-  return values.length;
+  return Object.values(obj).length;
 }
 
 console.log(countProps({}));

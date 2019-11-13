@@ -8,17 +8,12 @@ const user = {
 };
 
 user.mood = "happy";
-console.log(user);
 
 user.hobby = "Java script";
-console.log(user);
 
 user.premium = false;
-console.log(user);
 
-const entries = Object.entries(user);
-for (const entry of entries) {
-  const key = entry[0];
-  const value = entry[1];
-  console.log(`${key}: ${value}`);
+const keys = Object.keys(user);
+for (const key of keys) {
+  console.log(`${key}:${user[key]}`);
 }
