@@ -10,7 +10,7 @@ const products = [
 const getAllPropValues = function(users, prop) {
   const array = [];
   for (const user of users) {
-    if (user[prop]) {
+    if (prop in user) {
       array.push(user[prop]);
     }
   }

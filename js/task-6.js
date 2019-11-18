@@ -10,7 +10,7 @@ const calculateTotalPrice = function(arr, productName) {
   let total = 0;
   for (const user of arr) {
     if (user.name === productName) {
-      total = user.price * user.quantity;
+      total += user.price * user.quantity;
     }
   }
   return total;
